@@ -33,7 +33,11 @@ class Pnbp extends Model
 
     public function getDeviasiAttribute()
     {
-        return ($this->proyeksi - $this->realisasi) / $this->proyeksi;
+        if ($this->proyeksi != 0) {
+            return ($this->proyeksi - $this->realisasi) / $this->proyeksi;
+        }
+
+        return 0;
     }
 
     public function akun()
