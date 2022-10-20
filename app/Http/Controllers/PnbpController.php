@@ -46,7 +46,7 @@ class PnbpController extends Controller
             'bulan' => 'required',
             'uraian' => 'required',
             'proyeksi' => 'required',
-            'realisasi' => 'required',
+            'realisasi' => 'nullable',
         ]);
 
         $pnbp = Pnbp::create($request->all());
