@@ -28,7 +28,7 @@ class Pnbp extends Model
 
     public function getDeviasiAttribute()
     {
-        return ($this->realisasi - $this->proyeksi) / $this->realisasi;
+        return ($this->proyeksi - $this->realisasi) / $this->proyeksi;
     }
 
     public function getBulanNamaAttribute()
