@@ -26,14 +26,14 @@ class Pnbp extends Model
         'bulan_nama'
     ];
 
-    public function getDeviasiAttribute()
-    {
-        return ($this->proyeksi - $this->realisasi) / $this->proyeksi;
-    }
-
     public function getBulanNamaAttribute()
     {
         return Carbon::create()->month($this->bulan)->monthName;
+    }
+
+    public function getDeviasiAttribute()
+    {
+        return ($this->proyeksi - $this->realisasi) / $this->proyeksi;
     }
 
     public function akun()

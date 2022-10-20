@@ -44,8 +44,8 @@ class PnbpController extends Controller
             'akun_id' => 'required',
             'tahun' => 'required',
             'bulan' => 'required',
-            'uraian' => 'required',
-            'proyeksi' => 'required',
+            'uraian' => 'nullable',
+            'proyeksi' => 'nullable',
             'realisasi' => 'nullable',
         ]);
 
